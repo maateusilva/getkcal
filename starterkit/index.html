@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getkcal</title>
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/images/logo.svg" alt="getkcal" />
+    </header>
+
+    <div class="content">
+      <form id="form">
+        <div class="form-group">
+          <label for="gender">Seu sexo</label>
+          <select id="gender">
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age">Sua idade</label>
+          <input type="number" id="age" />
+        </div>
+        <div class="form-group">
+          <label for="weight">Seu peso</label>
+          <input type="number" id="weight" />
+        </div>
+        <div class="form-group">
+          <label for="height">Sua altura</label>
+          <input type="number" id="height" />
+        </div>
+        <div class="form-group">
+          <label for="activity_level">Seu nível de atividade física</label>
+          <select id="activity_level">
+            <option value="1.2">Sedentário</option>
+            <option value="1.375">Pouca atividade</option>
+            <option value="1.55">Atividade moderada</option>
+            <option value="1.725">Atividade intensa</option>
+            <option value="1.9">Atividade muito intensa</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Calcular!</button>
+        </div>
+      </form>
+      <div class="result-container">
+        <h2>Aqui está o resultado:</h2>
+
+        <div class="result-content">
+          <ul>
+            <li>
+              Seu metabolismo basal é de <strong>1606 calorias</strong>.
+            </li>
+            <li>
+              Para manter o seu peso você precisa consumir em média <strong>1928 calorias</strong>.
+            </li>
+            <li>
+              Para perder peso você precisa consumir em média <strong>1638 calorias</strong>.
+            </li>
+            <li>
+              Para ganhar peso você precisa consumir em média <strong>2217 calorias</strong>.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
